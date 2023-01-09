@@ -26,10 +26,9 @@ class SuperHero:
 
 class HeroWar(SuperHero):
     hero = 'Hero of World War 2'
-    damage = False
-    fly = False
+    
 
-    def __init__(self, name, nickname, superpower, health_points, catchphrase):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage = False, fly = False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.nickname = nickname
         self.superpower = superpower
@@ -47,10 +46,8 @@ class HeroWar(SuperHero):
 
 class HeroSpace(SuperHero):
     hero = 'Hero of Space'
-    damage = False
-    fly = False
-
-    def __init__(self, name, nickname, superpower, health_points, catchphrase):
+   
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage = False, fly = False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.nickname = nickname
         self.superpower = superpower
