@@ -30,9 +30,8 @@ class HeroWar(SuperHero):
 
     def __init__(self, name, nickname, superpower, health_points, catchphrase, damage = False, fly = False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
-        self.nickname = nickname
-        self.superpower = superpower
-        self.catchphrase = catchphrase
+        self.damage = damage
+        self.fly = fly
 
     def hp(self):
         self.fly = True
@@ -49,9 +48,8 @@ class HeroSpace(SuperHero):
    
     def __init__(self, name, nickname, superpower, health_points, catchphrase, damage = False, fly = False):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
-        self.nickname = nickname
-        self.superpower = superpower
-        self.catchphrase = catchphrase
+        self.damage = damage
+        self.fly = fly
 
     def hp(self):
         self.fly = True
